@@ -1,12 +1,12 @@
 import numpy as np
 import torch
 
-from code.DatasetLoader import DatasetLoader
-from code.MethodWLNodeColoring import MethodWLNodeColoring
-from code.MethodGraphBatching import MethodGraphBatching
-from code.MethodHopDistance import MethodHopDistance
-from code.ResultSaving import ResultSaving
-from code.Settings import Settings
+from src.DatasetLoader import DatasetLoader
+from src.MethodWLNodeColoring import MethodWLNodeColoring
+from src.MethodGraphBatching import MethodGraphBatching
+from src.MethodHopDistance import MethodHopDistance
+from src.ResultSaving import ResultSaving
+from src.Settings import Settings
 
 #---- 'cora' , 'citeseer', 'pubmed' ----
 

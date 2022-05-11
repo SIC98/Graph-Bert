@@ -1,8 +1,8 @@
-from code.DatasetLoader import DatasetLoader
-from code.MethodBertComp import GraphBertConfig
-from code.MethodGraphBertNodeClassification import MethodGraphBertNodeClassification
-from code.ResultSaving import ResultSaving
-from code.Settings import Settings
+from src.DatasetLoader import DatasetLoader
+from src.MethodBertComp import GraphBertConfig
+from src.MethodGraphBertNodeClassification import MethodGraphBertNodeClassification
+from src.ResultSaving import ResultSaving
+from src.Settings import Settings
 import numpy as np
 import torch
 

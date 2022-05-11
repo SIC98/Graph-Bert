@@ -5,7 +5,7 @@ Concrete SettingModule class for a specific experimental SettingModule
 # Copyright (c) 2017 Jiawei Zhang <jwzhanggy@gmail.com>
 # License: TBD
 
-from code.base_class.setting import setting
+from src.base_class.setting import setting
 
 
 class Settings(setting):

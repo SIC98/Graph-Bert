@@ -7,7 +7,7 @@ Concrete MethodModule class for a specific learning MethodModule
 
 import torch
 from transformers.models.bert.modeling_bert import BertPreTrainedModel, BertPooler
-from code.MethodBertComp import BertEmbeddings, BertEncoder
+from src.MethodBertComp import BertEmbeddings, BertEncoder
 
 
 BertLayerNorm = torch.nn.LayerNorm

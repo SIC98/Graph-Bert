@@ -2,7 +2,7 @@ import torch
 import torch.optim as optim
 
 from transformers.modeling_bert import BertPreTrainedModel
-from code.MethodGraphBert import MethodGraphBert
+from src.MethodGraphBert import MethodGraphBert
 
 import time
 

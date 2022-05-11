@@ -3,12 +3,12 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 from transformers.models.bert.modeling_bert import BertPreTrainedModel
-from code.MethodGraphBert import MethodGraphBert
+from src.MethodGraphBert import MethodGraphBert
 
 import time
 import numpy as np
 
-from code.EvaluateAcc import EvaluateAcc
+from src.EvaluateAcc import EvaluateAcc
 
 
 BertLayerNorm = torch.nn.LayerNorm

@@ -5,7 +5,7 @@ Concrete MethodModule class for a specific learning MethodModule
 # Copyright (c) 2017 Jiawei Zhang <jwzhanggy@gmail.com>
 # License: TBD
 
-from code.base_class.method import method
+from src.base_class.method import method
 
 
 class MethodGraphBatching(method):

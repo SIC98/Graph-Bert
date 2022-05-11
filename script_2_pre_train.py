@@ -1,12 +1,12 @@
 import numpy as np
 import torch
 
-from code.DatasetLoader import DatasetLoader
-from code.MethodBertComp import GraphBertConfig
-from code.MethodGraphBertNodeConstruct import MethodGraphBertNodeConstruct
-from code.MethodGraphBertGraphRecovery import MethodGraphBertGraphRecovery
-from code.ResultSaving import ResultSaving
-from code.Settings import Settings
+from src.DatasetLoader import DatasetLoader
+from src.MethodBertComp import GraphBertConfig
+from src.MethodGraphBertNodeConstruct import MethodGraphBertNodeConstruct
+from src.MethodGraphBertGraphRecovery import MethodGraphBertGraphRecovery
+from src.ResultSaving import ResultSaving
+from src.Settings import Settings
 
 #---- 'cora' , 'citeseer', 'pubmed' ----
 
