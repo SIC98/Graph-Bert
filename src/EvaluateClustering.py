@@ -5,7 +5,7 @@ Concrete Evaluate class for a specific evaluation metrics
 # Copyright (c) 2017 Jiawei Zhang <jwzhanggy@gmail.com>
 # License: TBD
 
-from code.base_class.evaluate import evaluate
+from src.base_class.evaluate import evaluate
 from sklearn.metrics.cluster import adjusted_mutual_info_score
 from sklearn.metrics.cluster import adjusted_rand_score
 from sklearn.metrics.cluster import completeness_score
