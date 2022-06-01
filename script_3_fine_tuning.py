@@ -1,6 +1,7 @@
 from src.DatasetLoader import DatasetLoader
 from src.MethodBertComp import GraphBertConfig
 from src.MethodGraphBertNodeClassification import MethodGraphBertNodeClassification
+from src.MethodGraphBertGraphClustering import MethodGraphBertGraphClustering
 from src.ResultSaving import ResultSaving
 from src.Settings import Settings
 import numpy as np
@@ -9,7 +10,7 @@ import torch
 
 #---- 'cora' , 'citeseer', 'pubmed' ----
 
-dataset_name = 'cora'
+dataset_name = 'webkb'
 
 np.random.seed(1)
 torch.manual_seed(1)
@@ -31,6 +32,10 @@ elif dataset_name == 'pubmed':
     nclass = 3
     nfeature = 500
     ngraph = 19717
+elif dataset_name == 'webkb':
+    nclass = 5
+    nfeature = 1703
+    ngraph = 877
 
 
 #---- Fine-Tuning Task 1: Graph Bert Node Classification (Cora, Citeseer, and Pubmed) ----
@@ -48,6 +53,10 @@ if 1:
         k = 5
         lr = 0.001
         max_epoch = 2000 #2000 # it takes a long epochs to get good results, sometimes can be more than 2000
+    elif dataset_name == 'webkb':
+        lr = 0.001
+        k = 7
+        max_epoch = 2000 # ---- do an early stop when necessary ----
 
     x_size = nfeature
     hidden_size = intermediate_size = 32
@@ -109,6 +118,10 @@ if 0:
         k = 5
         lr = 0.001
         max_epoch = 2000 #2000 # it takes a long epochs to converge, probably more than 2000
+    elif dataset_name == 'webkb':
+        lr =  0.001
+        k = 7
+        max_epoch = 2000 # ---- do an early stop when necessary ----
 
     x_size = nfeature
     hidden_size = intermediate_size = 32

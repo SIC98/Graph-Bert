@@ -3,10 +3,10 @@ from src.ResultSaving import ResultSaving
 
 #---------- clustering results evaluation -----------------
 
-dataset_name = 'pubmed'
+dataset_name = 'webkb'
 
 if 0:
-    pre_train_task = 'node_reconstruction+structure_recovery'
+    pre_train_task = 'node_reconstruction' # +graph_recovery
 
     result_obj = ResultSaving('', '')
     result_obj.result_destination_folder_path = './result/GraphBert/'
@@ -33,6 +33,8 @@ if 0:
         k = 5
     elif dataset_name == 'pubmed':
         k = 30
+    elif dataset_name == 'webkb':
+        k = 7
 
     result_obj = ResultSaving('', '')
     result_obj.result_destination_folder_path = './result/GraphBert/'
@@ -57,7 +59,7 @@ if 0:
 
 #--------------- Graph Bert Learning Convergence --------------
 
-dataset_name = 'cora'
+dataset_name = 'webkb'
 
 if 0:
     residual_type = 'graph_raw'
