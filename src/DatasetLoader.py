@@ -132,6 +132,10 @@ class DatasetLoader(dataset):
             idx_train = range(5)
             idx_val = range(5, 10)
             idx_test = range(5, 10)
+        elif self.dataset_name == 'webkb':
+            idx_train = range(70)
+            idx_test = range(100, 600)
+            idx_val = range(600, 750)
 
         features = torch.FloatTensor(np.array(features.todense()))
         labels = torch.LongTensor(np.where(one_hot_labels)[1])

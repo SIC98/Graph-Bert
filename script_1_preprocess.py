@@ -10,7 +10,7 @@ from src.Settings import Settings
 
 #---- 'cora' , 'citeseer', 'pubmed' ----
 
-dataset_name = 'cora'
+dataset_name = 'webkb'
 
 np.random.seed(1)
 torch.manual_seed(1)
@@ -32,6 +32,10 @@ elif dataset_name == 'pubmed':
     nclass = 3
     nfeature = 500
     ngraph = 19717
+elif dataset_name == 'webkb':
+    nclass = 5
+    nfeature = 1703
+    ngraph = 877
 
 
 #---- Step 1: WL based graph coloring ----
